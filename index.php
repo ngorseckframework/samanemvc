@@ -11,10 +11,10 @@
 
 require_once 'rooting/rooting.conf.php';
     require_once 'config/database.php';
-    require_once 'libs/Model.class.php';
-    require_once 'libs/View.class.php';
-    require_once 'libs/Controller.class.php';
-    require_once 'libs/Bootstrap.class.php';
+    require_once 'libs/Model.lib.class.php';
+    require_once 'libs/View.lib.class.php';
+    require_once 'libs/Controller.lib.class.php';
+    require_once 'libs/Bootstrap.lib.class.php';
 
     $bootstrap = new Bootstrap();
 ?>
