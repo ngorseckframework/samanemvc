@@ -16,6 +16,7 @@
         }
 
 		//A noter que toutes les views doivent être créées dans le dossier view/test
+        //Ne tester pas toutes les methodes, ce controller est un prototype pour vous aider à mieux comprendre
         public function index(){
             return $this->view->load("test/index");
         }
@@ -50,7 +51,7 @@
             {
                 extract($_POST);
                 if(!empty($valeur1) && !empty($valeur2)) {
-                    $ok = $sdb->addTest($valeur1, $valeur2);
+                    $ok = $tdb->addTest($valeur1, $valeur2);
                     $data['ok'] = $ok;
                 }
             }
@@ -58,7 +59,7 @@
             $data['liste_test'] = $tdb->listeTest();
             return $this->view->load("test/addTest", $data);
         }
-		public function addTest(){
+		public function updateTest(){
 			//Instanciation du model
             $tdb = new TestDB();
             if(isset($_POST['modifier'])){
