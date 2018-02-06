@@ -1,7 +1,7 @@
 <?php
 /*==================================================
     MODELE MVC DEVELOPPE PAR Ngor SECK
-    ngosecka@gmail.com
+    ngorsecka@gmail.com
     (+221) 77 - 433 - 97 - 16
     PERFECTIONNEZ CE MODEL ET FAITES MOI UN RETOUR
     POUR TOUTE MODIFICATION VISANT A AMELIORER
@@ -47,7 +47,7 @@
 			//Instanciation du model
             $tdb = new TestDB();
 			//Récupération des données qui viennent du formulaire view/test/addTest (à créer)
-            if(isset($_POST['valider']))
+            if(isset($_POST['valider']))//valider est ne name du champs submit
             {
                 extract($_POST);
                 if(!empty($valeur1) && !empty($valeur2)) {

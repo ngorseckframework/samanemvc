@@ -1,7 +1,7 @@
 <?php
 /*==================================================
     MODELE MVC DEVELOPPE PAR Ngor SECK
-    ngosecka@gmail.com
+    ngorsecka@gmail.com
     (+221) 77 - 433 - 97 - 16
     PERFECTIONNEZ CE MODEL ET FAITES MOI UN RETOUR
     POUR TOUTE MODIFICATION VISANT A AMELIORER
