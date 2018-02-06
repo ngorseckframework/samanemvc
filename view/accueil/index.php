@@ -5,8 +5,10 @@
     <title>page d'accueil</title>
 	<!-- l'appel de base_url() vous permet de recupérer le chemin de votre site web  -->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>public/css/samane.css"/>
 </head>
 <body>
+	<img src="<?php echo base_url(); ?>public/image/logo.jpg" class="resize" />
     <div class="nav navbar navbar-default navbar-fixed-top">
         <ul class="nav navbar-nav">
 			<!-- l'appel de base_url() vous permet de recupérer le chemin de votre site web  -->
