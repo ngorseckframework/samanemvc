@@ -9,7 +9,7 @@
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
 
-function base_url()
+	function base_url()
     {
         //PROTOCOLE
         $protocole = $_SERVER["SERVER_PROTOCOL"];
