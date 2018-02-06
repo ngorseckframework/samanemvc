@@ -33,7 +33,10 @@ class Bootstrap{
                         }else{
                             echo "la methode ".$url[1]." n'existe pas dans le controller ".$url[0];
                         }
-                    }
+                    }else{
+						$url[1] = "index";
+						$controller->{$url[1]}();
+					}
                 }else{
                     echo "Le controller " . $url[0] . " n'existe pas !";
                 }

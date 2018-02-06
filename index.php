@@ -9,7 +9,7 @@
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
 
-require_once 'rooting/rooting.conf.php';
+	require_once 'rooting/rooting.conf.php';
     require_once 'config/database.php';
     require_once 'libs/Model.lib.class.php';
     require_once 'libs/View.lib.class.php';
