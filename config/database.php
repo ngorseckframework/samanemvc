@@ -13,7 +13,7 @@
                     'host' => '127.0.0.1',
                     'user' => 'root',
                     'password' => '',
-                    'database_name' => 'test',
+                    'database_name' => 'samane_test',//change le nom de la base
                     'etat' => 'off'//metter à on pour demarrer la base
                     );
     }

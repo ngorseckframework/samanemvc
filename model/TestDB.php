@@ -10,6 +10,8 @@
   ===================================================*/
     class TestDB extends Model{
 		
+		//La base de données samane_test est dans view/test
+		//Pour tester importer la 
         public function __construct(){
             parent::__construct();
         }
@@ -24,21 +26,25 @@
         }
 		
 		function addTest($valeur1, $valeur2){
-        $sql = "INSERT INTO test VALUES(null, '$valeur1', '$valeur2')";
-
-        $this->db->exec($sql);
-        return $this->db->lastInsertId();//Si la clé primaire est auto_increment
-										 //sinon return $this->db->exec($sql);
+			$sql = "INSERT INTO test VALUES(null, '$valeur1', '$valeur2')";
+			if($this->db != null)
+			{
+				$this->db->exec($sql);
+				return $this->db->lastInsertId();//Si la clé primaire est auto_increment
+											 //sinon return $this->db->exec($sql);
+			}else{
+				return null;
+			}
 		}
 		
 		function deleteTest($id){
-			$sql = "DELETE FROM test WHERE idTest = $id";
+			$sql = "DELETE FROM test WHERE ID = $id";
 
 			return $this->db->exec($sql);
 		}
 		
 		function updateTest($idTest, $valeur1, $valeur2){
-			$sql = "UPDATE saisons SET valeur1 = '$valeur1',
+			$sql = "UPDATE test SET valeur1 = '$valeur1',
 						valeur2 = '$valeur2'
 						WHERE idTest = $idTest";
 
@@ -46,8 +52,10 @@
 		}
 		
 		function listeTest(){
-			$sql = "SELECT * FROM saisons";
-
-			return $this->db->query($sql)->fetchAll();
+			$sql = "SELECT * FROM test";
+			if($this->db != null)
+				return $this->db->query($sql)->fetchAll();
+			else
+				return null;
 		}
 	}

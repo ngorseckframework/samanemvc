@@ -16,12 +16,10 @@
         }
         //methode ou url
         public function index(){
-            //view
-            $this->view->load("accueil/index");
+			//view
+            return $this->view->load("accueil/index");
+			
         }
-		public function add(){
-            //view
-            $this->view->load("accueil/add");
-        }
+		
     }
 ?>

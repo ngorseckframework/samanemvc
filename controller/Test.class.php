@@ -34,20 +34,21 @@
             $data['test'] = $tdb->getTestRef($id);
             return $this->view->load("test/get", $data);
         }
-		public function liste($id){
+		public function liste(){
             //Instanciation du model
             $tdb = new TestDB();
 
             $data['tests'] = $tdb->listeTest();
-            return $this->view->load("test/get_view", $data);
+			
+            return $this->view->load("test/get_liste", $data);
         }
 	
 	
-		public function addTest(){
+		public function add(){
 			//Instanciation du model
             $tdb = new TestDB();
-			//Récupération des données qui viennent du formulaire view/test/addTest (à créer)
-            if(isset($_POST['valider']))//valider est ne name du champs submit
+			//Récupération des données qui viennent du formulaire view/test/add.html (à créer)
+            if(isset($_POST['valider']))//'valider' est le name du champs submit du formulaire add.html
             {
                 extract($_POST);
                 if(!empty($valeur1) && !empty($valeur2)) {
@@ -56,10 +57,9 @@
                 }
             }
             
-            $data['liste_test'] = $tdb->listeTest();
-            return $this->view->load("test/addTest", $data);
+            return $this->view->load("test/add", $data);
         }
-		public function updateTest(){
+		public function update(){
 			//Instanciation du model
             $tdb = new TestDB();
             if(isset($_POST['modifier'])){
