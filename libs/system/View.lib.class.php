@@ -27,7 +27,7 @@ class View{
             }
         }
 		
-        private function chargerDonnees($page, $data = ""){
+        private function chargerDonnees($page, $data = array()){
             
 			$data['url_base'] = base_url();
 			$this->tpl->assign($data);
