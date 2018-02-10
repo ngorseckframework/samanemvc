@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-02-08 18:11:55
+/* Smarty version 3.1.30, created on 2018-02-10 16:49:35
   from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\test\add.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a7c84db382b22_77508121',
+  'unifunc' => 'content_5a7f148fd528a9_72484305',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c95ba1fa30abf02767975d6f7813f56f8ec7829' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\test\\add.html',
-      1 => 1518109637,
+      1 => 1518277767,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a7c84db382b22_77508121 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a7f148fd528a9_72484305 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -59,9 +59,9 @@ Test/liste">Menu page test liste</a></li>
 				<div class="panel-body">
 					<?php if (isset($_smarty_tpl->tpl_vars['ok']->value)) {?>
 						<?php if ($_smarty_tpl->tpl_vars['ok']->value != 0) {?>
-							Données ajoutées!
+							<div class="alert alert-success">Données ajoutées!</div>
 						<?php } else { ?>
-							Erreur!
+							<div class="alert alert-danger">Erreur!</div>
 						<?php }?>
 					<?php }?>
 					<form method="post" action="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>

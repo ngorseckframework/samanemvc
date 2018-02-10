@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-02-08 17:57:27
+/* Smarty version 3.1.30, created on 2018-02-10 16:43:19
   from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\test\get_id.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a7c8177e57525_16864300',
+  'unifunc' => 'content_5a7f1317d83bb2_45275040',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f394fd0c3b007e8c4d3efdbfbbe31515ea85dda9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\test\\get_id.html',
-      1 => 1518108743,
+      1 => 1518277148,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a7c8177e57525_16864300 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a7f1317d83bb2_45275040 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -59,7 +59,7 @@ Test/liste">Menu page test liste</a></li>
 				<div class="panel-body">
 					MODELE DEVELOPPE PAR Ngor SECK !
 					<br/>
-					<h1>Valeur de l'identifiant revoyé par le controller : <?php echo $_smarty_tpl->tpl_vars['ID']->value;?>
+					<h1>Valeur de l'identifiant revoyée par le controller : <?php echo $_smarty_tpl->tpl_vars['ID']->value;?>
 </h1>
 				</div>
 			</div>

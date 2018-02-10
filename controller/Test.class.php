@@ -32,12 +32,13 @@
             $tdb = new TestDB();
 
             $data['test'] = $tdb->getTestRef($id);
+			
             return $this->view->load("test/get", $data);
         }
 		public function liste(){
             //Instanciation du model
             $tdb = new TestDB();
-
+			
             $data['tests'] = $tdb->listeTest();
 			
             return $this->view->load("test/get_liste", $data);
@@ -68,8 +69,8 @@
                     $ok = $tdb->updateTest($idTest, $valeur1, $valeur2);
                 }
             }
-            $data['liste_test'] = $tdb->listeSaison();
-            return $this->view->load("test/listeTest", $data);
+            $data['tests'] = $tdb->listeTest();
+            return $this->view->load("test/get_liste", $data);
         }
         
     }

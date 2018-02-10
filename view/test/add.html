@@ -27,9 +27,9 @@
 				<div class="panel-body">
 					{if isset($ok)}
 						{if $ok != 0}
-							Données ajoutées!
+							<div class="alert alert-success">Données ajoutées!</div>
 						{else}
-							Erreur!
+							<div class="alert alert-danger">Erreur!</div>
 						{/if}
 					{/if}
 					<form method="post" action="{$url_base}Test/add">
