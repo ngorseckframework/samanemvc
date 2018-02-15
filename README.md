@@ -2,4 +2,5 @@
 # samanemvc
 # Ngor SECK
 # PHP 
-# MVC
+# MVC version 1.0.1 du framework samanemvc
+
