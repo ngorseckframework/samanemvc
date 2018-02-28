@@ -1,0 +1,14 @@
+{
+    "name": "samanemvc/samanemvc",
+    "description": "SamaneMVC is a PHP Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ngorseckframework",
+            "email": "samanemvc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
