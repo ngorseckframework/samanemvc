@@ -21,14 +21,18 @@ class Model{
             $user = connexion_params()['user'];
             $password = connexion_params()['password'];
             try{
-                $dbconnexion = new PDO($dsn,
+                $this->db = new PDO($dsn,
                                         $user,
                                         $password,
                                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
             }catch (PDOException $ex){
-                die($ex->getMessage());
+                $erreur_base = $ex->getMessage();
+            if(substr($erreur_base, 0, 8) == "SQLSTATE")
+                die("<h1>Hooo vous n'avez pas encore cree la base de donnees? :)</h1>");
+            else
+                die('Erreur : '.$ex->getMessage());
             }
-            return $dbconnexion;
+            return $this->db;
         }
     }
 ?>

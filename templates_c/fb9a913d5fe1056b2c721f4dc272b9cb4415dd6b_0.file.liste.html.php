@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-02 12:20:57
-  from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\test\get_id.html" */
+/* Smarty version 3.1.30, created on 2018-03-02 12:23:01
+  from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\test\liste.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a9933994f3669_52186578',
+  'unifunc' => 'content_5a9934158366e4_79731779',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f394fd0c3b007e8c4d3efdbfbbe31515ea85dda9' => 
+    'fb9a913d5fe1056b2c721f4dc272b9cb4415dd6b' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\test\\get_id.html',
-      1 => 1519989643,
+      0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\test\\liste.html',
+      1 => 1519989778,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a9933994f3669_52186578 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a9934158366e4_79731779 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>page get id</title>
+		<title>page liste</title>
 		<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
 		<link type="text/css" rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -64,16 +64,55 @@ Test/liste">Menu page test liste</a></li>
 						cette base s'appelle samane_test.sql et elle comporte une seule table nommée test.
 						ça vous sera très utile j'espère.
 						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config
-						puis éditez le fichier database.php. Mettez à on l'etat de la base! Bon code!!!!  :)
+						puis éditez le fichier database.php. Mettez à on l'etat de la base puis cliquez sur le menu <b>Menu page test liste</b>! Bon code!!!!  :)
 					</div>
-					MODELE DEVELOPPE PAR Ngor SECK !
-					<br/>
-					<h1>Valeur de l'identifiant revoyée par le controller : <?php echo $_smarty_tpl->tpl_vars['ID']->value;?>
-</h1>
+					<?php if (isset($_smarty_tpl->tpl_vars['tests']->value)) {?>
+						<?php if ($_smarty_tpl->tpl_vars['tests']->value != null) {?>
+							<table class="table table-bordered table-stripped">
+								<tr>
+									<th>Identifiant</th>
+									<th>Valeur 1</th>
+									<th>Valeur 2</th>
+									<th>Action</th>
+									<th>Action</th>
+								</tr>
+								<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['tests']->value, 'test');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['test']->value) {
+?>
+									<tr>
+										<td><?php echo $_smarty_tpl->tpl_vars['test']->value['ID'];?>
+</td>
+										<td><?php echo $_smarty_tpl->tpl_vars['test']->value['valeur1'];?>
+</td>
+										<td><?php echo $_smarty_tpl->tpl_vars['test']->value['valeur2'];?>
+</td>
+										<td><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Test/delete/<?php echo $_smarty_tpl->tpl_vars['test']->value['ID'];?>
+">Supprimer</a></td>
+										<td><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Test/edit/<?php echo $_smarty_tpl->tpl_vars['test']->value['ID'];?>
+">Editer</a></td>
+									</tr>
+								<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
+							</table>
+						<?php } else { ?>
+							Liste vide
+						<?php }?>
+					<?php }?>
 				</div>
+				<a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Test/add">Ajout d'un test</a>
 			</div>
 		</div>
 		
 	</body>
-</html><?php }
+</html>
+<?php }
 }

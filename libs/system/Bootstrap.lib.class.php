@@ -32,22 +32,25 @@ class Bootstrap{
                                 $controller->{$url[1]}();
                             }
                         }else{
-                            echo "la methode ".$url[1]." n'existe pas dans le controller ".$url[0];
+                            $msg = "La méthode <b>".$url[1]."</b> n'existe pas dans le controller <b>".$url[0]."</b>!";
+							$this->messageError($msg);
                         }
                     }else{
 						if(method_exists($controller, "index")){
 							$controller->{"index"}();
 						}else{
-							echo "la methode index n'existe pas dans le controller ".$url[0];
+							$msg = "La méthode <b>index</b> n'existe pas dans le controller <b>".$url[0]."</b>!";
+							$this->messageError($msg);
 						}
 					}
                 }else{
-                    echo "Le controller " . $url[0] . " n'existe pas !";
+                    $msg = "Le controller <b>" . $url[0] . "</b> n'existe pas !";
+					$this->messageError($msg);
                 }
 
             }else{
                 //require_once 'controller/Accueil.class.php';
-				$file = 'controller/'.welcome_params()['welcome_controller'].'.class.php';
+				$file = 'controller/'.welcome_params()['welcome_controller'].'.class.php!';
 				if(file_exists($file))
 				{
 					require_once $file;
@@ -58,14 +61,35 @@ class Bootstrap{
 					if(method_exists($controller, "index")){
 						$controller->{"index"}();
 					}else{
-						echo "la methode index n'existe pas dans le controller ".welcome_params()['welcome_controller'];
+						$msg = "La methode <b>index</b> n'existe pas dans le controller <b>".welcome_params()['welcome_controller']."</b>!";
+						$this->messageError($msg);
 					}
                     
 				}else{
-					echo "Le controller welcome " . welcome_params()['welcome_controller'] . " n'existe pas !";
-					echo "<br/>Merci de bien faire la cofiguration du fichier config/autoloaders.php";
+					$msg = "Le controller welcome <b>" . welcome_params()['welcome_controller'] . "</b> n'existe pas !";
+					$msg = $msg. "<br/>Merci de bien faire la cofiguration du fichier <b>config/autoloaders.php</b>!";
+					$this->messageError($msg);
 				}
             }
         }
+		private function messageError($message)
+		{
+			$msg = '<html>
+						<head>
+							<meta charset="UTF-8">
+							<title>Error</title>
+							<link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css"/>
+							<link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css"/>
+						</head>
+						<body>
+							<div class="alert alert-danger" style="font-size:18px; text-align:justify;">
+							'.
+								$message
+							.'</div>
+						</body>
+					</html>';
+					
+			die($msg);
+		}
     }
 ?>

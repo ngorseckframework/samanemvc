@@ -16,16 +16,20 @@
             parent::__construct();
         }
 
-        function getTestRef($ID)
+        public function getTest($ID)
         {
             $sql = "SELECT *
                      FROM test
                      WHERE test.ID = ".$ID;
-            
-			return $this->db->query($sql)->fetchObject();
+            if($this->db != null)
+			{
+				return $this->db->query($sql)->fetch();
+			}else{
+				return null;
+			}
         }
 		
-		function addTest($valeur1, $valeur2){
+		public function addTest($valeur1, $valeur2){
 			$sql = "INSERT INTO test VALUES(null, '$valeur1', '$valeur2')";
 			if($this->db != null)
 			{
@@ -37,22 +41,33 @@
 			}
 		}
 		
-		function deleteTest($id){
+		public function deleteTest($id){
 			$sql = "DELETE FROM test WHERE ID = $id";
 
-			return $this->db->exec($sql);
+			if($this->db != null)
+			{
+				return $this->db->exec($sql);
+			}else{
+				return null;
+			}
 		}
 		
-		function updateTest($idTest, $valeur1, $valeur2){
+		public function updateTest($idTest, $valeur1, $valeur2){
 			$sql = "UPDATE test SET valeur1 = '$valeur1',
 						valeur2 = '$valeur2'
-						WHERE idTest = $idTest";
+						WHERE ID = $idTest";
 
-			return $this->db->exec($sql);
+			if($this->db != null)
+			{
+				return $this->db->exec($sql);
+			}else{
+				return null;
+			}
 		}
 		
-		function listeTest(){
+		public function listeTest(){
 			$sql = "SELECT * FROM test";
+			
 			if($this->db != null)
 				return $this->db->query($sql)->fetchAll();
 			else

@@ -15,7 +15,7 @@
             require_once 'model/TestDB.php';
         }
 
-		//A noter que toutes les views doivent être créées dans le dossier view/test
+		//A noter que toutes les views de ce controller doivent être créées dans le dossier view/test
         //Ne tester pas toutes les methodes, ce controller est un prototype pour vous aider à mieux comprendre
         public function index(){
             return $this->view->load("test/index");
@@ -31,7 +31,7 @@
             //Instanciation du model
             $tdb = new TestDB();
 
-            $data['test'] = $tdb->getTestRef($id);
+            $data['test'] = $tdb->getTest($id);
 			
             return $this->view->load("test/get", $data);
         }
@@ -41,7 +41,7 @@
 			
             $data['tests'] = $tdb->listeTest();
 			
-            return $this->view->load("test/get_liste", $data);
+            return $this->view->load("test/liste", $data);
         }
 	
 	
@@ -65,13 +65,30 @@
             $tdb = new TestDB();
             if(isset($_POST['modifier'])){
                 extract($_POST);
-                if(!empty($idTest) && !empty($valeur1) && !empty($valeur2)) {
-                    $ok = $tdb->updateTest($idTest, $valeur1, $valeur2);
+                if(!empty($id) && !empty($valeur1) && !empty($valeur2)) {
+                    $ok = $tdb->updateTest($id, $valeur1, $valeur2);
                 }
             }
-            $data['tests'] = $tdb->listeTest();
-            return $this->view->load("test/get_liste", $data);
+           
+            return $this->liste();//appel de la methode liste du controller
         }
-        
+        public function delete($id){
+            //Instanciation du model
+            $tdb = new TestDB();
+			//Supression
+			$tdb->deleteTest($id);
+			//Retour vers la liste
+            return $this->liste();
+        }
+		
+		public function edit($id){
+			
+            //Instanciation du model
+            $tdb = new TestDB();
+			//Supression
+			$data['test'] = $tdb->getTest($id);
+			//chargement de la vue edit.html
+            return $this->view->load("test/edit", $data);
+        }
     }
 ?>
