@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-02 13:29:29
+/* Smarty version 3.1.30, created on 2018-03-02 13:41:51
   from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\accueil\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a9943a97efdf8_53072509',
+  'unifunc' => 'content_5a99468f152e32_81206977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'af844bfee718968300584a5418c0a7e95d093572' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\accueil\\index.html',
-      1 => 1519993759,
+      1 => 1519994500,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a9943a97efdf8_53072509 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a99468f152e32_81206977 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -46,8 +46,6 @@ public/css/samane.css"/>
 		
 	</head>
 	<body onload="load_design()">
-		<img src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/image/logo.jpg" class="resize" />
 		<div class="nav navbar navbar-default navbar-fixed-top">
 			<ul class="nav navbar-nav">
 				<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -60,7 +58,10 @@ Test/getID/1">Menu page test 2</a></li>
 Test/liste">Menu page test liste</a></li>
 			</ul>
 		</div>
-		<div class="col-md-8 col-xs-12 col-md-offset-2" style="margin-top:150px;">
+		<img src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/image/logo.jpg" class="resize" />
+		
+		<div class="col-md-8 col-xs-12 col-md-offset-2" style="margin-top:160px;">
 			<div class="panel panel-info">
 				<div class="panel-heading">BIENVENUE A VOTRE MODELE MVC</div>
 				<div class="panel-body">
@@ -73,7 +74,7 @@ Test/liste">Menu page test liste</a></li>
 						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config
 						puis éditez le fichier database.php. Mettez à on l'etat de la base! Bon code!!!!  :)
 					</div>
-					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.0.1</h1></div>
+					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.0.2</h1></div>
 				</div>
 			</div>
 		</div>
