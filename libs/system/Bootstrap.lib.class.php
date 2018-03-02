@@ -50,7 +50,8 @@ class Bootstrap{
 
             }else{
                 //require_once 'controller/Accueil.class.php';
-				$file = 'controller/'.welcome_params()['welcome_controller'].'.class.php!';
+				$file = 'controller/'.welcome_params()['welcome_controller'].'.class.php';
+				echo $file;
 				if(file_exists($file))
 				{
 					require_once $file;
