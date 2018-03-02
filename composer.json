@@ -10,5 +10,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+       "require": {
+           "smarty/smarty": "~3.1"
+    }
 }
