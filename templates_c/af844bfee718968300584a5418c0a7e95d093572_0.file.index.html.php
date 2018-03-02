@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-02-09 11:00:41
+/* Smarty version 3.1.30, created on 2018-03-02 13:29:29
   from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\accueil\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a7d714951ba09_61323012',
+  'unifunc' => 'content_5a9943a97efdf8_53072509',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'af844bfee718968300584a5418c0a7e95d093572' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\accueil\\index.html',
-      1 => 1518170438,
+      1 => 1519993759,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a7d714951ba09_61323012 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a9943a97efdf8_53072509 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -64,6 +64,15 @@ Test/liste">Menu page test liste</a></li>
 			<div class="panel panel-info">
 				<div class="panel-heading">BIENVENUE A VOTRE MODELE MVC</div>
 				<div class="panel-body">
+					<div class="alert alert-success" style="font-size:18px; text-align:justify;">
+						Merci, l'équipe samanemvc vous remercie :) : 
+						je vous ai préparé un CRUD qui marche, il suffit tout simplement d'importer
+						la base de données qui se trouve dans le dossier view puis test (view/test);
+						cette base s'appelle samane_test.sql et elle comporte une seule table nommée test.
+						ça vous sera très utile j'espère.
+						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config
+						puis éditez le fichier database.php. Mettez à on l'etat de la base! Bon code!!!!  :)
+					</div>
 					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.0.1</h1></div>
 				</div>
 			</div>
