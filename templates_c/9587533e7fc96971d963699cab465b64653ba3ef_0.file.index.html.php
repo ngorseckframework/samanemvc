@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-05-02 10:11:44
+/* Smarty version 3.1.30, created on 2018-05-02 16:23:49
   from "/var/www/html/Samane_workspace/samanemvc/view/accueil/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ae98ee0aaa413_96157376',
+  'unifunc' => 'content_5ae9e615127035_50643289',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9587533e7fc96971d963699cab465b64653ba3ef' => 
     array (
       0 => '/var/www/html/Samane_workspace/samanemvc/view/accueil/index.html',
-      1 => 1525255663,
+      1 => 1525278182,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ae98ee0aaa413_96157376 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ae9e615127035_50643289 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -74,7 +74,7 @@ public/image/logo.jpg" class="resize" />
 						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config
 						puis éditez le fichier database.php. Mettez à on l'etat de la base! Bon code!!!!  :)
 					</div>
-					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.0.3</h1></div>
+					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.2</h1></div>
 				</div>
 			</div>
 		</div>
