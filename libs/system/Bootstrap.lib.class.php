@@ -31,7 +31,7 @@ class Bootstrap{
                             $params = $r->getParameters();
                             if(count($params)== 0)
                             {
-                                $controller_obj->$m();
+                                $controller->$m();
 
                             }else{
                             	if(isset($url[2])){
