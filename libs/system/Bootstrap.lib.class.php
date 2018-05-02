@@ -26,20 +26,31 @@ class Bootstrap{
                             $url[1] = "index";
                         }
                         if(method_exists($controller, $url[1])){
-                            if(isset($url[2])){
-                                $controller->{$url[1]}($url[2]);
+                        	 $m =$url[1];
+                            $r = new ReflectionMethod($url[0],$url[1]);
+                            $params = $r->getParameters();
+                            if(count($params)== 0)
+                            {
+                                $controller_obj->$m();
+
                             }else{
-                                $controller->{$url[1]}();
-                            }
+                            	if(isset($url[2])){
+	                                $controller->{$url[1]}($url[2]);
+	                            }
+	                            else{
+	                                $msg = "la methode<b> ".$url[1]."()</b> a un parameter";
+	                                $this->messageError($msg);
+	                            }
+	                        }
                         }else{
-                            $msg = "La méthode <b>".$url[1]."</b> n'existe pas dans le controller <b>".$url[0]."</b>!";
+                            $msg = "La méthode <b>".$url[1]."()</b> n'existe pas dans le controller <b>".$url[0]."</b>!";
 							$this->messageError($msg);
                         }
                     }else{
 						if(method_exists($controller, "index")){
 							$controller->{"index"}();
 						}else{
-							$msg = "La méthode <b>index</b> n'existe pas dans le controller <b>".$url[0]."</b>!";
+							$msg = "La méthode <b>index()</b> n'existe pas dans le controller <b>".$url[0]."</b>!";
 							$this->messageError($msg);
 						}
 					}
@@ -61,7 +72,7 @@ class Bootstrap{
 					if(method_exists($controller, "index")){
 						$controller->{"index"}();
 					}else{
-						$msg = "La methode <b>index</b> n'existe pas dans le controller <b>".welcome_params()['welcome_controller']."</b>!";
+						$msg = "La methode <b>index()</b> n'existe pas dans le controller <b>".welcome_params()['welcome_controller']."</b>!";
 						$this->messageError($msg);
 					}
                     

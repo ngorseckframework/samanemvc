@@ -52,13 +52,15 @@
             if(isset($_POST['valider']))//'valider' est le name du champs submit du formulaire add.html
             {
                 extract($_POST);
+                $data['ok'] = 0;
                 if(!empty($valeur1) && !empty($valeur2)) {
                     $ok = $tdb->addTest($valeur1, $valeur2);
                     $data['ok'] = $ok;
                 }
+                return $this->view->load("test/add", $data);
+            }else{
+                return $this->view->load("test/add");
             }
-            
-            return $this->view->load("test/add", $data);
         }
 		public function update(){
 			//Instanciation du model

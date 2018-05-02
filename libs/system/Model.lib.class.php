@@ -27,7 +27,7 @@ class Model{
                                         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
             }catch (PDOException $ex){
                 $erreur_base = $ex->getMessage();
-            if(substr($erreur_base, 0, 8) == "SQLSTATE")
+            if(substr($erreur_base, 0, 39) == "SQLSTATE[HY000] [1049] Unknown database")
                 die("<h1>Hooo vous n'avez pas encore cree la base de donnees? :)</h1>");
             else
                 die('Erreur : '.$ex->getMessage());

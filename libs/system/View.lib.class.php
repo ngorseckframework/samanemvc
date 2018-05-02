@@ -28,10 +28,37 @@ class View{
         }
 		
         private function chargerDonnees($page, $data = array()){
-            
-			$data['url_base'] = base_url();
-			$this->tpl->assign($data);
-            $this->tpl->display('view/' . $page . '.html');
+            $page_directory = 'view/' . $page . '.html';
+            $data['url_base'] = base_url();
+            $this->tpl->assign($data);
+                
+            if(file_exists($page_directory))
+            {
+    			$this->tpl->display($page_directory);
+            }else{
+
+                $message = "la view <b>".$page_directory."</b> n'existe pas!!!!";
+                $this->messageError($message);
+            }
+        }
+        private function messageError($message)
+        {
+            $msg = '<html>
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Error</title>
+                            <link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css"/>
+                            <link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css"/>
+                        </head>
+                        <body>
+                            <div class="alert alert-danger" style="font-size:18px; text-align:justify;">
+                            '.
+                                $message
+                            .'</div>
+                        </body>
+                    </html>';
+                    
+            die($msg);
         }
     }
 ?>
