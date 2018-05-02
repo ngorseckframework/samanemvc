@@ -11,10 +11,10 @@
     function connexion_params(){
         return array(
                     'host' => '127.0.0.1',
-                    'user' => 'passer',
-                    'password' => 'passer',
+                    'user' => 'root',
+                    'password' => '',
                     'database_name' => 'samane_test',//change le nom de la base
-                    'etat' => 'on'//metter à on pour demarrer la base
+                    'etat' => 'off'//metter à on pour demarrer la base
                     );
     }
 ?>
