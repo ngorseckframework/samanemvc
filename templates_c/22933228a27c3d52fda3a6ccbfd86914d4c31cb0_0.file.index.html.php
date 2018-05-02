@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-05-02 10:11:51
+/* Smarty version 3.1.30, created on 2018-05-02 16:30:42
   from "/var/www/html/Samane_workspace/samanemvc/view/test/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ae98ee7966ca7_88005635',
+  'unifunc' => 'content_5ae9e7b2c94ec9_61441405',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '22933228a27c3d52fda3a6ccbfd86914d4c31cb0' => 
     array (
       0 => '/var/www/html/Samane_workspace/samanemvc/view/test/index.html',
-      1 => 1525255663,
+      1 => 1525278630,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ae98ee7966ca7_88005635 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ae9e7b2c94ec9_61441405 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -45,6 +45,8 @@ public/image/logo.jpg" class="resize" />
 			<ul class="nav navbar-nav">
 				<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
+				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+">Accueil</a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Test/index">Menu page test</a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
