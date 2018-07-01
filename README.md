@@ -19,6 +19,9 @@ Version
 ?
 ```
 ## SamaneMVC is a PHP framework
+```
+Email
+```
 :email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
