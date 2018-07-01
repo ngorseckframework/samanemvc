@@ -1,8 +1,8 @@
-
+:thumbsup:
 ```
 Name
 ```
-## samanemvc
+## samanemvc :snake:
 ```
 author
 ```
@@ -19,12 +19,11 @@ Version
 ?
 ```
 ## SamaneMVC is a PHP framework
-```
-Email
-```
+:email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
 ```
 composer command line
 ```
 ###### composer create-project samane/samanemvc your_project_name
+:white_check_mark:
