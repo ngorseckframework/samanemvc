@@ -2,7 +2,7 @@
 ```
 Name
 ```
-## samanemvc :snake:
+## samanemvc
 ```
 author
 ```
