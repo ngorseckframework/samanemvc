@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-05-02 16:31:08
-  from "/var/www/html/Samane_workspace/samanemvc/view/test/liste.html" */
+/* Smarty version 3.1.30, created on 2019-03-11 01:56:45
+  from "/var/www/html/Samane_workspace/samanemvc/src/view/test/liste.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5ae9e7cc493006_99039061',
+  'unifunc' => 'content_5c85c05dadd3a1_19622769',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'c6b39f6730d2b8c751b5b2af466d223232f44456' => 
+    'b98b0848b6cdd3a1b07df859e383dc8ebccc820b' => 
     array (
-      0 => '/var/www/html/Samane_workspace/samanemvc/view/test/liste.html',
-      1 => 1525278653,
+      0 => '/var/www/html/Samane_workspace/samanemvc/src/view/test/liste.html',
+      1 => 1552256318,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ae9e7cc493006_99039061 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c85c05dadd3a1_19622769 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -62,7 +62,7 @@ Test/liste">Menu page test liste</a></li>
 					<div class="alert alert-success" style="font-size:18px; text-align:justify;">
 						Merci, l'équipe samanemvc vous remercie :) : 
 						je vous ai préparé un CRUD qui marche, il suffit tout simplement d'importer
-						la base de données qui se trouve dans le dossier view puis test (view/test);
+						la base de données qui se trouve dans le dossier src/view puis test (src/view/test);
 						cette base s'appelle samane_test.sql et elle comporte une seule table nommée test.
 						ça vous sera très utile j'espère.
 						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config

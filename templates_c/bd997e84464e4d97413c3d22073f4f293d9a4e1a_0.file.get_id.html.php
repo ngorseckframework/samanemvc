@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-03-02 12:20:57
-  from "C:\xampp\htdocs\mesprojets\FRAMEWORK-SECK\MVC_BY_SECK\MVC_BY_NGOR_SECK\view\test\get_id.html" */
+/* Smarty version 3.1.30, created on 2019-03-11 01:56:44
+  from "/var/www/html/Samane_workspace/samanemvc/src/view/test/get_id.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a9933994f3669_52186578',
+  'unifunc' => 'content_5c85c05cc19ae8_04167215',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f394fd0c3b007e8c4d3efdbfbbe31515ea85dda9' => 
+    'bd997e84464e4d97413c3d22073f4f293d9a4e1a' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\mesprojets\\FRAMEWORK-SECK\\MVC_BY_SECK\\MVC_BY_NGOR_SECK\\view\\test\\get_id.html',
-      1 => 1519989643,
+      0 => '/var/www/html/Samane_workspace/samanemvc/src/view/test/get_id.html',
+      1 => 1552256278,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a9933994f3669_52186578 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c85c05cc19ae8_04167215 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -46,6 +46,8 @@ public/image/logo.jpg" class="resize" />
 				<!-- l'appel de <?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
  vous permet de recupérer le chemin de votre site web  -->
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+">Accueil</a></li>
+				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Test/index">Menu page test</a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Test/getID/1">Menu page test 2</a></li>
@@ -60,7 +62,7 @@ Test/liste">Menu page test liste</a></li>
 					<div class="alert alert-success" style="font-size:18px; text-align:justify;">
 						Merci, l'équipe samanemvc vous remercie :) : 
 						je vous ai préparé un CRUD qui marche, il suffit tout simplement d'importer
-						la base de données qui se trouve dans le dossier view puis test (view/test);
+						la base de données qui se trouve dans le dossier src/view puis test (src/view/test);
 						cette base s'appelle samane_test.sql et elle comporte une seule table nommée test.
 						ça vous sera très utile j'espère.
 						<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config

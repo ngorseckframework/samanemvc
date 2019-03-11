@@ -10,7 +10,7 @@
   ===================================================*/
 
 	
-	require_once 'libs/load/load.php';
-
-    $bootstrap = new Bootstrap();
+	require_once 'libs/autoload/Autoloader.class.php';
+  use libs\system\Bootstrap;
+  $bootstrap = new Bootstrap();
 ?>
