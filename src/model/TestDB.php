@@ -60,7 +60,7 @@
 		
 		public function updateTest($test){
 			$sql = "UPDATE test SET valeur1 = '".$test->getValeur1()."',
-						valeur2 = '".$test->getValeur1()."'
+						valeur2 = '".$test->getValeur2()."'
 						WHERE ID = ".$test->getId();
 			
 			if($this->db != null)

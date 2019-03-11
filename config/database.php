@@ -12,7 +12,7 @@
         return array(
                     'host' => '127.0.0.1',
                     'user' => 'root',
-                    'password' => '',
+                    'password' => 'passer',
                     'database_name' => 'samane_test',//change le nom de la base
                     'etat' => 'on'//metter à on pour demarrer la base
                     );

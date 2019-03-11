@@ -51,7 +51,7 @@ class Autoloader
       require_once str_replace("\\", "/", $class.".php");
     else if(file_exists(str_replace("\\", "/", $class.".lib.class.php")))
       require_once str_replace("\\", "/", $class.".lib.class.php");
-    /*else
+    else
     {
       $message = "le namespace <b>".$class."</b> ne correspond pas à un chemin valide
                   dans votre application.
@@ -59,7 +59,7 @@ class Autoloader
       require_once "libs/system/SM_Error.lib.class.php";
       $error = new SM_Error();
       $error->messageError($message);
-    }*/
+    }
   }
 }
 Autoloader::register();
