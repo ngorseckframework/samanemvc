@@ -8,11 +8,12 @@
     CE MODELE.
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
-
+namespace libs\system;
 class View{
 		private $tpl;
         public function __construct(){
-			$this->tpl = new Smarty();
+            require_once "SM_Sarty.lib.class.php";
+			$this->tpl = getSmarty();
         }
         public function load(){
             $num = func_num_args();
@@ -28,7 +29,7 @@ class View{
         }
 		
         private function chargerDonnees($page, $data = array()){
-            $page_directory = 'view/' . $page . '.html';
+            $page_directory = 'src/view/' . $page . '.html';
             $data['url_base'] = base_url();
             $this->tpl->assign($data);
                 
@@ -38,27 +39,10 @@ class View{
             }else{
 
                 $message = "la view <b>".$page_directory."</b> n'existe pas!!!!";
-                $this->messageError($message);
+                $error = new SM_Error();
+                $error->messageError($message);
             }
         }
-        private function messageError($message)
-        {
-            $msg = '<html>
-                        <head>
-                            <meta charset="UTF-8">
-                            <title>Error</title>
-                            <link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css"/>
-                            <link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css"/>
-                        </head>
-                        <body>
-                            <div class="alert alert-danger" style="font-size:18px; text-align:justify;">
-                            '.
-                                $message
-                            .'</div>
-                        </body>
-                    </html>';
-                    
-            die($msg);
-        }
+        
     }
 ?>

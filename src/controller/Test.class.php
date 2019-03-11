@@ -8,16 +8,22 @@
     CE MODELE.
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
+    use libs\system\Controller; 
+
+    use src\entities\Test as TestEntity;
+
+    use src\model\TestDB;
+
     class Test extends Controller{
         public function __construct(){
             parent::__construct();
-            //Appel du model
-            require_once 'model/TestDB.php';
+            //Appel du model grace au systeme autoloading
         }
 
 		//A noter que toutes les views de ce controller doivent être créées dans le dossier view/test
         //Ne tester pas toutes les methodes, ce controller est un prototype pour vous aider à mieux comprendre
         public function index(){
+
             return $this->view->load("test/index");
         }
 
@@ -54,7 +60,12 @@
                 extract($_POST);
                 $data['ok'] = 0;
                 if(!empty($valeur1) && !empty($valeur2)) {
-                    $ok = $tdb->addTest($valeur1, $valeur2);
+                    
+                    $testObject = new TestEntity();
+                    $testObject->setValeur1($valeur1);
+                    $testObject->setValeur2($valeur2);
+
+                    $ok = $tdb->addTest($testObject);
                     $data['ok'] = $ok;
                 }
                 return $this->view->load("test/add", $data);
@@ -68,7 +79,11 @@
             if(isset($_POST['modifier'])){
                 extract($_POST);
                 if(!empty($id) && !empty($valeur1) && !empty($valeur2)) {
-                    $ok = $tdb->updateTest($id, $valeur1, $valeur2);
+                    $testObject = new TestEntity();
+                    $testObject->setId($id);
+                    $testObject->setValeur1($valeur1);
+                    $testObject->setValeur2($valeur2);
+                    $ok = $tdb->updateTest($testObject);
                 }
             }
            

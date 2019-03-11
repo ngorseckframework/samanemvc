@@ -8,9 +8,15 @@
     CE MODELE.
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
+	namespace src\model; 
+	
+	use libs\system\Model; 
+	//Ici Test est une entite c'est a dire une classe
+	use src\entities\Test;
+	  
     class TestDB extends Model{
 		
-		//La base de données samane_test est dans view/test
+		//La base de données samane_test est dans src/view/test
 		//Pour tester importer la 
         public function __construct(){
             parent::__construct();
@@ -29,8 +35,8 @@
 			}
         }
 		
-		public function addTest($valeur1, $valeur2){
-			$sql = "INSERT INTO test VALUES(null, '$valeur1', '$valeur2')";
+		public function addTest($test){
+			$sql = "INSERT INTO test VALUES(null, '".$test->getValeur1()."', '".$test->getValeur2()."')";
 			if($this->db != null)
 			{
 				$this->db->exec($sql);
@@ -52,14 +58,15 @@
 			}
 		}
 		
-		public function updateTest($idTest, $valeur1, $valeur2){
-			$sql = "UPDATE test SET valeur1 = '$valeur1',
-						valeur2 = '$valeur2'
-						WHERE ID = $idTest";
-
+		public function updateTest($test){
+			$sql = "UPDATE test SET valeur1 = '".$test->getValeur1()."',
+						valeur2 = '".$test->getValeur1()."'
+						WHERE ID = ".$test->getId();
+			
 			if($this->db != null)
 			{
 				return $this->db->exec($sql);
+				
 			}else{
 				return null;
 			}

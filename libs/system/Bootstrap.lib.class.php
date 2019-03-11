@@ -8,7 +8,7 @@
     CE MODELE.
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
-
+namespace libs\system;
 class Bootstrap{
         public function __construct(){
             $model = new Model();
@@ -16,7 +16,7 @@ class Bootstrap{
 			if(isset($_GET['url'])){
                 $url = explode('/',$_GET['url']);
 
-                $file = 'controller/' . $url[0] . '.class.php';
+                $file = 'src/controller/' . $url[0] . '.class.php';
                 if(file_exists($file)){
                     require_once $file;
                     $controller = new $url[0]();
@@ -26,8 +26,9 @@ class Bootstrap{
                             $url[1] = "index";
                         }
                         if(method_exists($controller, $url[1])){
-                        	 $m =$url[1];
-                            $r = new ReflectionMethod($url[0],$url[1]);
+							$m =$url[1];
+							require_once "PHP_DB_Connection.lib.class.php";
+                            $r = paramsMethods($url[0],$url[1]);
                             $params = $r->getParameters();
                             if(count($params)== 0)
                             {
@@ -61,7 +62,7 @@ class Bootstrap{
 
             }else{
                 //require_once 'controller/Accueil.class.php';
-				$file = 'controller/'.welcome_params()['welcome_controller'].'.class.php';
+				$file = 'src/controller/'.welcome_params()['welcome_controller'].'.class.php';
 				if(file_exists($file))
 				{
 					require_once $file;
@@ -78,7 +79,7 @@ class Bootstrap{
                     
 				}else{
 					$msg = "Le controller welcome <b>" . welcome_params()['welcome_controller'] . "</b> n'existe pas !";
-					$msg = $msg. "<br/>Merci de bien faire la cofiguration du fichier <b>config/autoloaders.php</b>!";
+					$msg = $msg. "<br/>Merci de bien faire la configuration du fichier <b>config/welcome_controller.php</b>!";
 					$this->messageError($msg);
 				}
             }

@@ -5,12 +5,21 @@
     (+221) 77 - 433 - 97 - 16
     PERFECTIONNEZ CE MODEL ET FAITES MOI UN RETOUR
     POUR TOUTE MODIFICATION VISANT A AMELIORER
-    CE DERNIER (GIT).
+    CE MODELE.
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
-    function welcome_params(){
-        return array(
-                    'welcome_controller' => 'Accueil'
-                    );
+    use libs\system\Controller;
+    class Welcome extends Controller{
+
+        public function __construct(){
+            parent::__construct();
+        }
+        //methode ou url
+        public function index(){
+			//view
+            return $this->view->load("welcome/index");
+			
+        }
+		
     }
 ?>
