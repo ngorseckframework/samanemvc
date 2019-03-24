@@ -1,1 +1,4 @@
 /vendor/
+/config/build/
+.phpunit.result.cache
+/output/

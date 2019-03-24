@@ -1,5 +1,5 @@
 <?php
-/*==================================================
+ /*==================================================
     MODELE MVC DEVELOPPE PAR Ngor SECK
     ngorsecka@gmail.com
     (+221) 77 - 433 - 97 - 16
@@ -9,8 +9,9 @@
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
 
-	
-	require_once 'libs/autoload/Autoloader.class.php';
-  use libs\system\Bootstrap;
-  $bootstrap = new Bootstrap();
-?>
+
+require_once 'libs/autoload/Autoloader.class.php';
+use libs\system\Bootstrap;
+
+$bootstrap = new Bootstrap();
+ 

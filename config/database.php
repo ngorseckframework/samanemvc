@@ -1,5 +1,5 @@
 <?php
-/*==================================================
+ /*==================================================
     MODELE MVC DEVELOPPE PAR Ngor SECK
     ngorsecka@gmail.com
     (+221) 77 - 433 - 97 - 16
@@ -8,13 +8,14 @@
     CE DERNIER (GIT).
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
-    function connexion_params(){
-        return array(
-                    'host' => '127.0.0.1',
-                    'user' => 'root',
-                    'password' => '',
-                    'database_name' => 'samane_test',//change le nom de la base
-                    'etat' => 'off'//metter à on pour demarrer la base
-                    );
-    }
-?>
+function connexion_params()
+{
+  return array(
+    'host' => '127.0.0.1',
+    'user' => 'root',
+    'password' => '',
+    'database_name' => 'samane_test', //change le nom de la base
+    'etat' => 'off' //metter à on pour demarrer la base
+  );
+}
+ 
