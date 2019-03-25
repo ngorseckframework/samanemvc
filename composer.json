@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "dev",
        "require": {
-           "smarty/smarty": "~3.1"
+           "smarty/smarty": "~3.1",
+        "nikic/fast-route": "^2.0@dev"
     }
 }
