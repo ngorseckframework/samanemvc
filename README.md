@@ -19,14 +19,17 @@ Version
 Description
 ```
 ## SamaneMVC is a Senegalese Made PHP Framework
+
+```
+composer command line
+```
+###### composer create-project samane/samanemvc your_project_name
+
 ```
 Email
 ```
 :email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
-```
-composer command line
-```
-###### composer create-project samane/samanemvc your_project_name
+
 :white_check_mark:
