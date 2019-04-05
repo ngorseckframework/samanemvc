@@ -16,9 +16,9 @@ Version
 ```
 ## MVC version 1.5
 ```
-?
+Description
 ```
-## SamaneMVC is a PHP framework
+## SamaneMVC is a Senegalese Made PHP Framework
 ```
 Email
 ```
