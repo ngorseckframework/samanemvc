@@ -40,7 +40,7 @@ we are open to any proposal idea and participation of the project and share it t
 * tips 
 
 ```bash 
-git clone https://github.com/Jukoo/WrtcTrial.git
+git clone https://github.com/ngorseckframework/samanemvc/
 # create anothor branch and switch to it 
 git branch [name of your branch] 
 git checkout [name of your branch you have already created] 
@@ -49,12 +49,18 @@ git add .
 git commit -am "your commit message"
 git push origin [your branch]
 ```
-but also you can declare an issue to help us !/ 
+
+but also you can declare an issue to help us !
+
+
+```bash 
+# install the framework from composer cli 
+composer create-project samane/samanemvc your_project_name
+
+```
 
 ### Contributing to SamaneMvc
 please read  the  CONTRIBUTING.md
-
-
 
 ###### Maintainer Contact
 --- 
@@ -62,4 +68,5 @@ please read  the  CONTRIBUTING.md
 :email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
+
 ```
