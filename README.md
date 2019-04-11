@@ -23,7 +23,7 @@ Description
 ```
 composer command line
 ```
-###### composer create-project samane/samanemvc your_project_name
+#### composer create-project samane/samanemvc your_project_name
 
 ```
 Email
