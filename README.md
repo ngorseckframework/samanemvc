@@ -6,7 +6,9 @@
 
 ```
 ![work status](https://img.shields.io/badge/work-on%20progress-red.svg) 
-![SMVC](https://img.shields.io/badge/SamaneMvc-v0.1.2-orange.svg) 
+
+![SMVC](https://img.shields.io/badge/SamaneMvc-v1.5-orange.svg) 
+
 ![phpversion](https://img.shields.io/badge/PHP-%40latest-blue.svg)
 
 ### About SamaneMVC
@@ -32,10 +34,19 @@ The requirements needed to run this frameWork :
  you can visite this page -> [php manual](http://php.net)
  and learn more about it ... 
 
+
 ### we love pull request 
 :rocket:
 
 we are open to any proposal idea and participation of the project and share it through the community 
+
+=======
+
+### we love pull request 
+:rocket:
+
+we are open to any proposal idea and participation of the project and share it through the community 
+
 
 * tips 
 
@@ -48,7 +59,7 @@ git checkout [name of your branch you have already created]
 git add . 
 git commit -am "your commit message"
 git push origin [your branch]
-```
+
 
 but also you can declare an issue to help us !
 
@@ -56,7 +67,6 @@ but also you can declare an issue to help us !
 ```bash 
 # install the framework from composer cli 
 composer create-project samane/samanemvc your_project_name
-
 ```
 
 ### Contributing to SamaneMvc
@@ -64,9 +74,8 @@ please read  the  CONTRIBUTING.md
 
 ###### Maintainer Contact
 --- 
+
 ```
 :email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
-
-```
