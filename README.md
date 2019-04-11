@@ -75,11 +75,11 @@ please read  the  CONTRIBUTING.md
 Email
 ```
 :email:
-## ngorsecka@gmail.com
-## samanemvc@gmail.com
+### ngorsecka@gmail.com
+### samanemvc@gmail.com
 ```
 Description
 ```
-## SamaneMVC is a Senegalese Made PHP Framework
+### SamaneMVC is a Senegalese Made PHP Framework
 
 :white_check_mark:
