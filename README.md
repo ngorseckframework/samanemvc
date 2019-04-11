@@ -23,7 +23,7 @@ ON PROGRESS ...
 ### REQUIREMENTS 
 The requirements needed to run this frameWork : 
 ```
-    php >= 7.* 
+    php >= 7.1 
     Mysql 
     Composer (for dependencies) 
  
