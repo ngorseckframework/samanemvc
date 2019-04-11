@@ -71,46 +71,20 @@ please read  the  CONTRIBUTING.md
 ###### Maintainer Contact
 --- 
 ```
-:email:
-## ngorsecka@gmail.com
-## samanemvc@gmail.com
-
-```
-
-
-
-:thumbsup:
-```
-Name
-```
-## samanemvc
-```
-author
-```
-## Ngor SECK
-```
-Language
-```
-## PHP 
-```
-Version
-```
-## MVC version 1.5
-```
-Description
-```
-## SamaneMVC is a Senegalese Made PHP Framework
-
-```
-composer command line
-```
-## composer create-project samane/samanemvc your_project_name
-
 ```
 Email
 ```
 :email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
+
+```
+author
+```
+## Ngor SECK
+```
+Description
+```
+## SamaneMVC is a Senegalese Made PHP Framework
 
 :white_check_mark:
