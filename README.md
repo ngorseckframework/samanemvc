@@ -77,11 +77,6 @@ Email
 :email:
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
-
-```
-author
-```
-## Ngor SECK
 ```
 Description
 ```
