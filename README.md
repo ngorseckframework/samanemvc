@@ -25,7 +25,7 @@ ON PROGRESS ...
 ### REQUIREMENTS 
 The requirements needed to run this frameWork : 
 ```
-    php >= 7.* 
+    php >= 7.1 
     Mysql 
     Composer (for dependencies) 
  
@@ -60,13 +60,14 @@ git add .
 git commit -am "your commit message"
 git push origin [your branch]
 
-
+```
 but also you can declare an issue to help us !
 
 
 ```bash 
 # install the framework from composer cli 
 composer create-project samane/samanemvc your_project_name
+
 ```
 
 ### Contributing to SamaneMvc
@@ -75,7 +76,8 @@ please read  the  CONTRIBUTING.md
 ###### Maintainer Contact
 --- 
 
-```
 :email:
+
 ## ngorsecka@gmail.com
 ## samanemvc@gmail.com
+
