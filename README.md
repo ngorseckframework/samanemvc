@@ -11,7 +11,7 @@
 
 ### About SamaneMVC
 ---
-SAMANEMVC is a PHP framework based on MVC model (Model View Controller) 
+SamaneMVC is a Senegalese Made PHP Framework, based on the MVC Pattern
 :construction:
 
 ON PROGRESS ... 
@@ -77,9 +77,5 @@ Email
 :email:
 ### ngorsecka@gmail.com
 ### samanemvc@gmail.com
-```
-Description
-```
-### SamaneMVC is a Senegalese Made PHP Framework
 
 :white_check_mark:
