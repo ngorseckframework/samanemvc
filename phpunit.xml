@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  bootstrap="vendor/autoload.php"
+  colors="true"
+  verbose="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false">
+
+    <testsuites>
+      <testsuite name="Samane Unit TestSuite">
+        <directory suffix="Test.php">./tests/Unit</directory>
+      </testsuite>
+    </testsuites>
+
+    <filter>
+      <whitelist processUncoveredFilesFromWhitelist="true">
+          <directory suffix=".php">./src</directory>
+      </whitelist>
+    </filter>
+
+    <logging>
+      <log type="tap" target="config/build/report.tap"/>
+      <log type="junit" target="config/build/report.junit.xml"/>
+      <log type="coverage-text" target="config/build/coverage.txt"/>
+      <log type="coverage-clover" target="config/build/logs/clover.xml"/>
+    </logging>
+</phpunit>

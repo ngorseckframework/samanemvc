@@ -3,14 +3,29 @@
     "description": "SamaneMVC is a PHP Framework",
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "ngorseckframework",
-            "email": "samanemvc@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "ngorseckframework",
+        "email": "samanemvc@gmail.com"
+    }],
     "minimum-stability": "dev",
-       "require": {
-           "smarty/smarty": "~3.1"
+    "require": {
+        "smarty/smarty": "~3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "dev-master",
+        "phpunit/phpunit": "8"
     }
 }
