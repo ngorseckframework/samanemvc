@@ -40,7 +40,7 @@ we are open to any proposal idea and participation of the project and share it t
 * tips 
 
 ```bash 
-git clone https://github.com/ngorseckframework/samanemvc/
+git clone https://github.com/ngorseckframework/samanemvc.git
 # create anothor branch and switch to it 
 git branch [name of your branch] 
 git checkout [name of your branch you have already created] 
