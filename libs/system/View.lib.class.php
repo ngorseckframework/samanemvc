@@ -3,19 +3,20 @@
     MODELE MVC DEVELOPPE PAR Ngor SECK
     ngorsecka@gmail.com
     (+221) 77 - 433 - 97 - 16
-    PERFECTIONNEZ CE MODEL ET FAITES MOI UN RETOUR
-    POUR TOUTE MODIFICATION VISANT A AMELIORER
-    CE MODELE.
+    PERFECTIONNEZ CE MODELE ET FAITES MOI UN RETOUR
+    POUR TOUTE MODIFICATION VISANT A L'AMELIORER.
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
 namespace libs\system;
 class View{
 		private $tpl;
-        public function __construct(){
+        public function __construct()
+        {
             require_once "SM_Sarty.lib.class.php";
 			$this->tpl = getSmarty();
         }
-        public function load(){
+        public function load()
+        {
             $num = func_num_args();
             $args = func_get_args();
             switch($num){
@@ -27,8 +28,15 @@ class View{
                     break;
             }
         }
-		
-        private function chargerDonnees($page, $data = array()){
+        public function redirect($url)
+        {
+            $page = base_url();
+            $page = $page.$url;
+            //header("location:$page");
+            echo "<script>window.location.assign($page)</script>";
+        }
+        private function chargerDonnees($page, $data = array())
+        {
             $page_directory = 'src/view/' . $page . '.html';
             $data['url_base'] = base_url();
             $this->tpl->assign($data);
@@ -42,7 +50,6 @@ class View{
                 $error = new SM_Error();
                 $error->messageError($message);
             }
-        }
-        
+        }    
     }
 ?>

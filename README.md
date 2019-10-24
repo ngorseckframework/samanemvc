@@ -6,18 +6,18 @@
 
 ```
 ![work status](https://img.shields.io/badge/work-on%20progress-red.svg) 
-![SMVC](https://img.shields.io/badge/SamaneMvc-v1.5-orange.svg) 
+![SMVC](https://img.shields.io/badge/SamaneMvc-v1.9-orange.svg) 
 ![phpversion](https://img.shields.io/badge/PHP-%40latest-blue.svg)
 
 ### About SamaneMVC
 ---
-SamaneMVC is a Senegalese Made PHP Framework, based on the MVC Pattern
+SAMANEMVC is a PHP framework based on MVC model (Model View Controller) 
 :construction:
 
 ON PROGRESS ... 
 
-> last version : 1.5
-  release periode : 2019-03-10
+> last version : 1.9.0
+  release periode : 2019-10-24
 
 
 ### REQUIREMENTS 
@@ -77,5 +77,9 @@ Email
 :email:
 ### ngorsecka@gmail.com
 ### samanemvc@gmail.com
+```
+Description
+```
+### SamaneMVC is a Senegalese Made PHP Framework
 
 :white_check_mark:

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PDF generator</title>
+		<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
+		<style>
+			h1{ 
+				color: #40007d;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="{$url_base}public/image/logo.jpg" class="resize" />
+		<div class="nav navbar navbar-default navbar-fixed-top">
+			<ul class="nav navbar-nav">
+				<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+				<li><a href="{$url_base}">Accueil</a></li>
+				<li><a href="{$url_base}Test/index">Menu test page </a></li>
+				<li><a href="{$url_base}Test/getID/1">Menu test get id page </a></li>
+                <li><a href="{$url_base}Test/liste">Menu test list page </a></li>
+				<li><a href="{$url_base}Upload/index">upload file </a></li>
+				<li><a href="{$url_base}PdfGenerator/generate">Samane Generate pdf file </a></li>
+				<li><a href="{$url_base}ExcelGenerator/generate">Samane Generate excel file </a></li>
+				<li><a href="{$url_base}ExcelGenerator/read">Samane read excel file </a></li>
+				<li><a href="{$url_base}Email/sendMail">Samane Mailing </a></li>
+			</ul>
+		</div>
+		<div class="col-md-8 col-xs-12 col-md-offset-2" style="margin-top:150px;">
+			<div class="panel panel-info">
+				<div class="panel-heading">BIENVENUE A VOTRE MODELE MVC</div>
+				<div class="panel-body">
+					{if isset($pdfResult)}
+						<div class="alert alert-warning">
+							{$pdfResult}
+							<br/>
+							<a href="{$url_base}public/folder/pdf/samane.pdf">Download file generated</a>
+						</div>
+					{/if}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
