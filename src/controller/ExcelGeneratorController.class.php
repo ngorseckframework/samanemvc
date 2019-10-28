@@ -22,7 +22,7 @@ class ExcelGeneratorController extends Controller{
         $data = array();
         $data['A2'] = 'SECK';
         $data['B2'] = 'Ngor';
-        $data['C2'] = 'n.seck@samane.sn';
+        $data['C2'] = 'samanemvc@gmail.sn';
         /**
          * name of my excel file
          */

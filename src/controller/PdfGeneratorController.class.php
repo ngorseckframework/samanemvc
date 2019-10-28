@@ -15,7 +15,7 @@ class PdfGeneratorController extends Controller{
                 </center>';
         $htmlDataFormat = $htmlDataFormat . '<br><p>Samane is a PHP framework</p>';
         $htmlDataFormat = $htmlDataFormat . '<br><p>Ngor Seck, Senior PHP developer</p>';
-        $htmlDataFormat = $htmlDataFormat . '<br><p>Email: ngorsecka@gmail.com</p>';
+        $htmlDataFormat = $htmlDataFormat . '<br><p>Email: samanemvc@gmail.com</p>';
         // (Optional) Setup the paper size and orientation
         $paperFormat = array();
         $paperFormat['A4'] = 'portrait';//$paperFormat['A4'] = 'landscape';
