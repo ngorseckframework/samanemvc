@@ -25,7 +25,7 @@ class EmailController extends Controller
          * your can define $attachments to null
          * Example: $attachments = null;
          */
-        $attachments = array('public/folder/pdf/samane.pdf');
+        $attachments = array('public/folder/pdf/samane1.pdf');
             
         $result = $mail->sendMail($from, $companyName, $recipients, $replyTo, $cc, $bcc, $attachments , $subject, $body);
         

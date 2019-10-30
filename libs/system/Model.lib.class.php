@@ -8,9 +8,11 @@
     VOUS ETES LIBRE DE TOUTE UTILISATION.
   ===================================================*/
 namespace libs\system;
-class Model{
+class Model
+{
         protected $db;
-        public function __construct(){
+        public function __construct()
+        {
             require "config/database.php";
             require_once "PHP_DB_Connection.lib.class.php";
             require "bootstrap.php";
@@ -18,11 +20,6 @@ class Model{
             {
                 try {
                     $this->db = $entityManager;
-                    //var_dump($this->db);
-                    /*if ($this->db == null)
-                    {
-                        die("Error : database parameters are not valid");
-                    }*/
                 } catch (PDOException $th) {
                     $this->db = null;
                 }  

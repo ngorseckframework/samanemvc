@@ -22,58 +22,81 @@ class TestRepository extends Model{
 
 	public function getTest($id)
 	{
-		return $this->db->getRepository('Test')->find(array('id' => $id));
+		if($this->db != null)
+		{
+			return $this->db->getRepository('Test')->find(array('id' => $id));
+		}
 	}
 	
 	public function addTest($test)
 	{
-		$this->db->persist($test);
-		$this->db->flush();
+		if($this->db != null)
+		{
+			$this->db->persist($test);
+			$this->db->flush();
 
-		return $test->getId();
+			return $test->getId();
+		}
 	}
 	
 	public function deleteTest($id){
-		$test = $this->db->find('Test', $id);
-		if($test != null)
+		if($this->db != null)
 		{
-			$this->db->remove($test);
-			$this->db->flush();
-		}else {
-			die("Objet ".$id." does not existe!");
+			$test = $this->db->find('Test', $id);
+			if($test != null)
+			{
+				$this->db->remove($test);
+				$this->db->flush();
+			}else {
+				die("Objet ".$id." does not existe!");
+			}
 		}
 	}
 	
 	public function updateTest($test){
-		$getTest = $this->db->find('Test', $test->getId());
-		if($getTest != null)
+		if($this->db != null)
 		{
-			$getTest->setValeur1($test->getValeur1());
-			$getTest->setValeur2($test->getValeur2());
-			$this->db->flush();
+			$getTest = $this->db->find('Test', $test->getId());
+			if($getTest != null)
+			{
+				$getTest->setValeur1($test->getValeur1());
+				$getTest->setValeur2($test->getValeur2());
+				$this->db->flush();
 
-		}else {
-			die("Objet ".$test->getId()." does not existe!!");
-		}	
+			}else {
+				die("Objet ".$test->getId()." does not existe!!");
+			}	
+		}
 	}
 	
 	public function listeTest(){
-		return $this->db->createQuery("SELECT t FROM Test t")->getResult();
+		if($this->db != null)
+		{
+			return $this->db->createQuery("SELECT t FROM Test t")->getResult();
+		}
 	}
 	
 	public function listeTestsById($id)
 	{
-		return $this->db->getRepository('Test')->findBy(array('id' => $id));
+		if($this->db != null)
+		{
+			return $this->db->getRepository('Test')->findBy(array('id' => $id));
+		}
 	}
 
 	public function listeOfTestsById($id){
-		
-		return $this->db->createQuery("SELECT t FROM Test t WHERE t.id = " . $id)->getSingleResult();
+		if($this->db != null)
+		{
+			return $this->db->createQuery("SELECT t FROM Test t WHERE t.id = " . $id)->getSingleResult();
+		}
 	}
 
 	public function listeOfTests()
 	{
-		return $this->db->getRepository('Test')->findAll();
+		if($this->db != null)
+		{
+			return $this->db->getRepository('Test')->findAll();
+		}
 	}
 	
 }
