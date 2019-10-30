@@ -83,13 +83,9 @@ class TestRepository extends Model{
 			return $this->db->getRepository('Test')->findBy(array('id' => $id));
 		}
 	}
-
-<<<<<<< HEAD
-	public function listeOfTestsById($id){
-=======
+	
 	public function listeOfTestsById($id)
 	{
->>>>>>> devmaster
 		if($this->db != null)
 		{
 			return $this->db->createQuery("SELECT t FROM Test t WHERE t.id = " . $id)->getSingleResult();
