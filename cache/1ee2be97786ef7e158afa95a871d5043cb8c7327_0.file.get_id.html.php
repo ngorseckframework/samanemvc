@@ -1,11 +1,19 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.30, created on 2019-10-30 17:51:07
+=======
+/* Smarty version 3.1.30, created on 2019-10-30 18:18:12
+>>>>>>> devmaster
   from "/Applications/XAMPP/xamppfiles/htdocs/mesprojets/Samane_workspace/samane1.9.0-Final/samanemvc/src/view/test/get_id.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
+<<<<<<< HEAD
   'unifunc' => 'content_5db9bf7bb91bf4_57694595',
+=======
+  'unifunc' => 'content_5db9c5d499ac39_94463438',
+>>>>>>> devmaster
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5db9bf7bb91bf4_57694595 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5db9c5d499ac39_94463438 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> devmaster
 ?>
 <html>
 	<head>

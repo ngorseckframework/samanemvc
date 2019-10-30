@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.30, created on 2019-10-30 17:50:59
+=======
+/* Smarty version 3.1.30, created on 2019-10-30 18:20:58
+>>>>>>> devmaster
   from "/Applications/XAMPP/xamppfiles/htdocs/mesprojets/Samane_workspace/samane1.9.0-Final/samanemvc/src/view/welcome/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
+<<<<<<< HEAD
   'unifunc' => 'content_5db9bf7361d269_69502072',
+=======
+  'unifunc' => 'content_5db9c67aa277c7_58220686',
+>>>>>>> devmaster
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b64db1b49cef948815c3f728d19e121f66d0ca37' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/mesprojets/Samane_workspace/samane1.9.0-Final/samanemvc/src/view/welcome/index.html',
+<<<<<<< HEAD
       1 => 1572453636,
+=======
+      1 => 1572455517,
+>>>>>>> devmaster
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5db9bf7361d269_69502072 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5db9c67aa277c7_58220686 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> devmaster
 ?>
 <!doctype html>
 <html lang="en">
@@ -83,7 +99,11 @@ public/image/logo.jpg" class="resize" />
 							<br/>Et surtout noubliez pas de configurer votre base de données : ou? Dans le dossier config
 							puis éditez le fichier database.php. Mettez à on l'etat de la base! Bon code!!!!  :)
 					</div>
+<<<<<<< HEAD
 					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.9.1 Doctrine ORM</h1></div>
+=======
+					<div id="design_js">MODELE DEVELOPPE PAR Ngor SECK ! <h1>Version 1.9.0 Doctrine ORM</h1></div>
+>>>>>>> devmaster
 				</div>
 			</div>
 		</div>
