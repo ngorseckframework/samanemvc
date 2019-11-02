@@ -39,19 +39,27 @@
          * PORT
          */
         $server_port = $_SERVER["SERVER_PORT"];
-        /**
-         * PATH
-         */
-         $base_path = $_SERVER["PHP_SELF"];
-        $tab = explode("/", $base_path);
-        $base_path = "";
-        for ($i = 1; $i < count($tab) - 1; $i++) {
-            $base_path = $base_path . "/" . $tab[$i];
+        if(isset($_SERVER["PHP_SELF"])) {
+            /**
+             * PATH
+             */
+            $base_path = $_SERVER["PHP_SELF"];
+            $tab = explode("/", $base_path);
+            $base_path = "";
+            for ($i = 1; $i < count($tab) - 1; $i++) {
+                $base_path = $base_path . "/" . $tab[$i];
+            }
+            $base_path = $base_path . "/";
+            $url = $protocole . $server_name . $server_port . $base_path;
+            /**
+             * V1.9.2
+             */
+            $files = explode('/', $_SERVER["PHP_SELF"]);
+            if(!file_exists($files[count($files)-1]))
+            {
+                $url = $protocole . $server_name . $server_port . '/';
+            }
         }
-        $base_path = $base_path . "/";
-        
-        $url = $protocole . $server_name . $server_port . $base_path;
-        
         return $url;
     }
 ?>

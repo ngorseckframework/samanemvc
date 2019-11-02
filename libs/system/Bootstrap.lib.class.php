@@ -13,8 +13,27 @@ class Bootstrap{
         public function __construct(){
             $error = new SM_Error();
 			$model = new Model();
+			/**
+			 * V1.9.2
+			 */
+			$boolUrl = false;
 			if(isset($_GET['url'])){
-				$url = explode('/',$_GET['url']);
+				$boolUrl = true;
+			}
+			if(strlen($_SERVER["REQUEST_URI"]) != 1){
+				$url = explode('/', substr($_SERVER['REQUEST_URI'],1));
+				$file = 'src/controller/' . $url[0] . 'Controller.class.php';
+                $controllerObject = $url[0]."Controller";
+				if(file_exists($file)){
+					$boolUrl = true;
+				}
+			}
+			if($boolUrl == true){
+				if(isset($_GET['url'])) {
+                    $url = explode('/', $_GET['url']);
+                } else {
+                    $url = explode('/', substr($_SERVER['REQUEST_URI'],1));
+				}
 				
 				$error->pageError($url[0]);
 

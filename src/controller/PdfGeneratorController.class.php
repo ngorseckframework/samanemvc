@@ -21,6 +21,14 @@ class PdfGeneratorController extends Controller{
         $paperFormat['A4'] = 'portrait';//$paperFormat['A4'] = 'landscape';
         
         $fileName  = 'public/folder/pdf/samane.pdf';
+        /**
+         * V1.9.2
+         */
+        if(file_exists($fileName))
+        {
+            unlink($fileName);
+            $fileName  = 'public/folder/pdf/samane.pdf';
+        }
         $result = $pdf->generate($htmlDataFormat, $paperFormat, $fileName);
         
         $data['pdfResult'] = $result;
