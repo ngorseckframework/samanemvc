@@ -64,9 +64,9 @@ composer command line
 >>>>>>> master
 
 ```
-* tips
+:rocket:
 
-```bash 
+``` 
 # execute the framework with this command line
 php -S locahost:1105
 # you can use any port
