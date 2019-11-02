@@ -1,0 +1,3 @@
+<?php
+$output = shell_exec('php -S localhost:1105');
+echo $output;
