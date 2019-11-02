@@ -65,11 +65,11 @@ composer command line
 
 ```
 :rocket:
-
-``` 
+```
 # execute the framework with this command line
 php -S locahost:1105
 # you can use any port
+```
 ```
 ### Contributing to SamaneMvc
 please read  the  CONTRIBUTING.md
