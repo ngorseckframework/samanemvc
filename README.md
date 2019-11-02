@@ -64,7 +64,7 @@ composer command line
 >>>>>>> master
 
 ```
-:rocket:
+
 ```bash
 # execute the framework with this command line
 php -S locahost:1105
