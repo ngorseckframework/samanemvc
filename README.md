@@ -30,6 +30,7 @@ The requirements needed to run this frameWork :
 ```
  if you  are looking for some information about features  
  you can visite this page -> [php manual](http://php.net) 
+ 
  you can download composer from this page-> [download composer](https://getcomposer.org)
  and learn more about it ... 
 
