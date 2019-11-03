@@ -70,12 +70,12 @@ composer command line
 ```bash
 # execute the framework with this command line
 php -S localhost:1105
-# And pate on your web browser : http://localhost:1105
+# And tape on your web browser : http://localhost:1105
 # you can use any port
 
 # or, you can alos execute the framework with this command line
 php serve
-# And pate on your web browser : http://localhost:1105
+# And tape on your web browser : http://localhost:1105
 
 ```
 ```
