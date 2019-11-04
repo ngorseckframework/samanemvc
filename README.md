@@ -82,6 +82,7 @@ php serve
 ### Contributing to SamaneMvc
 please read  the  CONTRIBUTING.md
 
+contributor: Pierre Yem Mback , dialrock360@gmail.com
 ###### Maintainer Contact
 --- 
 ```
