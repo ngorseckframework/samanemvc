@@ -17,9 +17,9 @@ class SamaneMailing
             $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'ngorseckjee@gmail.com';                     // SMTP username
-            $mail->Password   = 'seckangor123';                               // SMTP password
-            $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 465;                                    // TCP port to connect to
+            $mail->Password   = 'seckngor123!';                               // SMTP password
+            $mail->SMTPSecure = 'ssl'; //'tls';                                // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 465;  //587;                                 // TCP port to connect to
 
             /** 
              * Recipients

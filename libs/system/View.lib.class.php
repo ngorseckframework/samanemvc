@@ -32,8 +32,8 @@ class View{
         {
             $page = base_url();
             $page = $page.$url;
-            //header("location:$page");
-            echo "<script>window.location.assign($page)</script>";
+            header("location:$page");
+            //echo "<script>window.location.assign($page)</script>";
         }
         private function chargerDonnees($page, $data = array())
         {
