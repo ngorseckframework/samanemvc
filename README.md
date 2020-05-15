@@ -16,7 +16,7 @@ SAMANEMVC is a PHP framework based on MVC model (Model View Controller)
 
 ON PROGRESS ... 
 
-> last version : 1.9.1
+> last version : 1.9.3
   release periode : 2019-10-24
 
 

@@ -33,7 +33,14 @@ class View{
             $page = base_url();
             $page = $page.$url;
             header("location:$page");
-            //echo "<script>window.location.assign($page)</script>";
+        }
+        public function responseJson($dataTable)
+        {
+            header("Access-Control-Allow-Origin: *");
+            header("Access-Control-Allow-Headers: Origin, Content-Type");
+            header("Content-Type: application/json; charset=UTF-8");
+            
+            echo json_encode($dataTable);
         }
         private function chargerDonnees($page, $data = array())
         {
