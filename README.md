@@ -62,9 +62,11 @@ composer create-project samane/samanemvc your_project_name
 =======
 composer command line
 ```
+```
 ## composer create-project samane/samanemvc your_project_name
 if your PHP version or your composer version is not up to date, tipe this command
 ## composer create-project samane/samanemvc your_project_name --ignore-platform-reqs
+```
 >>>>>>> master
 =======
 
